@@ -7,7 +7,7 @@ from datetime import datetime
 client = DataAPIClient(ASTRA_DB_TOKEN)
 db = client.get_database_by_api_endpoint(ASTRA_DB_API_ENDPOINT)
 
-# Create bronze collection without vector options
+# Create bronze collection 
 try:
     db.create_collection("bronze_sales")
     print("Created bronze_sales collection")

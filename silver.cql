@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS sales_medallion.silver_sales (
+    order_id TEXT PRIMARY KEY,
+    region TEXT,
+    country TEXT,
+    item_type TEXT,
+    sales_channel TEXT,
+    order_priority TEXT,
+    order_date DATE,
+    ship_date DATE,
+    days_to_ship INT,
+    units_sold INT,
+    unit_price DECIMAL,
+    unit_cost DECIMAL,
+    total_revenue DECIMAL,
+    total_cost DECIMAL,
+    total_profit DECIMAL,
+    profit_margin DECIMAL,
+    is_valid BOOLEAN,
+    processing_timestamp TIMESTAMP
+);
